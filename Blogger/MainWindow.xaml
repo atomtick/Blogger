@@ -51,6 +51,13 @@
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Blogger">
+                    <MenuItem Header="Reload">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <xp:CallMethodAction MethodName="Reload" TargetObject="{Binding}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </MenuItem>
                     <MenuItem Header="Restart">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">

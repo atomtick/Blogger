@@ -181,6 +181,11 @@ namespace Blogger
             return true;
         }
 
+        public void Reload()
+        {
+            TreeRoots.Clear();
+            Build();
+        }
         public void ChooseNewFolder()
         {
             var dialog = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
